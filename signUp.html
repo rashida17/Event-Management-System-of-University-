@@ -1,0 +1,65 @@
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>-->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Sign Up</title></head>
+<link rel="stylesheet" href="signup.css">
+
+<body>
+    
+<div class="container">
+<form method="post" action="RegisterServlet" autocomplete="on">
+ <h2 id="heading">Create your account</h2>
+<hr>
+<!-- Full Name -->
+<label for="name">Name:</label>
+  <input type="text" id="name" name="fullname" placeholder="Full Name" required>
+
+<!-- Phone Number -->
+<label for="ph_no">Phone No:</label>
+<input type="tel" pattern="[0-9]" maxlength="11" id="ph_no" name="phoneNumber" placeholder=" Phone No" required><br>
+ <!-- Email -->
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email" placeholder="Email Id" required><br>
+<!-- Password -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Password" required><br>
+
+<label for="department">Department:</label>
+<select id="department" name="department" required>
+  <option value="">Select Department</option>
+  <option value="Computer Science">Computer Science</option>
+  <option value="Electrical Engineering">Electrical Engineering</option>
+  <option value="Mechanical Engineering">Mechanical Engineering</option>
+  <option value="Civil Engineering">Civil Engineering</option>
+  <option value="Business Administration">Business Administration</option>
+</select>
+<br>
+<!-- Gender -->
+<label >Gender:</label>
+<span id="radio">
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label>
+
+
+<input type="radio" id="female" name="gender" value="Female" required>
+<label for="female">Female</label><br>
+</span>
+
+
+
+<div id="myButton">
+<button type="submit" >SUBMIT</button>
+
+</div>
+<p>Already have an account? <a href="login.jsp">Login here</a></p>
+</form>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
