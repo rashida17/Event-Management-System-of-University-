@@ -1,0 +1,115 @@
+
+body {
+background: linear-gradient(135deg, #0B3D91 10%, #F4E1C1 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Poppins;
+}
+.container{
+    border: 2px solid #E0E0E0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 400px;
+    padding: 0px 30px 30px 40px;
+    text-align: left;
+    margin: 100px auto;
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+    height: 370px;
+}
+hr{
+    
+    width: 0px;
+}
+#heading{
+
+    text-align: center;
+    color: #0B3D91;
+    border-bottom: 2px solid #C5A572;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+input[type="text"],
+select{ 
+    width: 60%;
+    border: 1px solid #575454a9;
+    border-radius: 0px;
+    margin: 3px 43px 5px ;
+    height: 30px;
+}
+
+input[type="tel"],
+select{
+
+    width: 60%;
+    margin: 3px 18px 5px ;
+    border: 1px solid  #575454a9;
+    border-radius: 0px;
+    height: 30px;
+}
+
+input[type="email"],
+select{
+
+    width: 60%;
+    margin: 3px 22px 5px ;
+    border: 1px solid  #575454a9;
+    border-radius: 0px;
+    height: 30px;
+
+}
+input[type="password"],
+select{
+
+    width: 60%;
+ margin: 3px 20px 10px ;
+    border: 1px solid  #575454a9;
+    border-radius: 0px;
+    height: 30px;
+}
+
+#department{ 
+    width: 62%;
+    border: 1px solid #575454a9;
+    border-radius: 0px;
+    margin: 3px 5px 5px 3px;
+    height: 30px;
+}
+
+ button {
+    background-color: #0B3D91;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-bottom: 20px; 
+}
+    
+button:hover {
+    background-color: #C5A572; /* gold accent */
+
+}
+
+#radio{
+     margin: 3px 26px 20px ;
+}
+
+p{
+    
+    text-align: center;
+}
+a {
+  color: #0B3D91;
+  text-decoration: none;
+}
+a:hover {
+  color: #C5A572;
+  text-decoration: underline;
+}
