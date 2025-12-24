@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Campus Events Hub - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/home1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="navbar">
+    <div class="logo">
+        <img src="../media/IMAGE/logo2.png" alt="Campus Events Hub">
+    </div>
+       
+    <nav id="navContent">
+
+        <a href="../HTML/HOME.html">Home</a>
+
+        <!-- Categories Dropdown -->
+        <div class="navOptions">
+            <a class="drop-btn">Categories</a>
+            <ul class="dropdown">
+                <li><a href="../HTML/academicEvents.html">Academic</a></li>
+                <li><a href="../HTML/technicalEvents.html">Technical</a></li>
+                 <li><a href="../HTML/workshopEvents.html">Workshop</a></li>
+                <li><a href="../HTML/careerEvents.html">Career</a></li>
+                <li><a href="../HTML/culturalEvents.html">Cultural</a></li>
+                <li><a href="../HTML/festivalEvents.html">Festivals</a></li>
+                <li><a href="../HTML/sportsEvents.html">Sports</a></li>
+                <li><a href="../HTML/socialEvents.html">Social & Community</a></li>
+            </ul>
+        </div>
+
+        <!-- Upcoming Events Dropdown -->
+        <div class="navOptions">
+            <a class="drop-btn">Upcoming Events</a>
+            <ul class="dropdown">
+                <li><a href="#" onclick="filterEvents('today')">Today</a></li>
+        <li><a href="#" onclick="filterEvents('tomorrow')">Tomorrow</a></li>
+        <li><a href="#" onclick="filterEvents('week')">This Week</a></li>
+        <li><a href="#" onclick="filterEvents('month')">This Month</a></li>
+            </ul>
+        </div>
+
+        <a href="../JSP/UserDashboard.jsp">My Enrollments</a>
+
+    </nav>
+     <span class="searchCont">
+        <form action="../JSP/search.jsp"  class="searchBar" autocomplete="off">
+          <input type="text" placeholder="Search Events" name="query">
+          <button type="submit" ><img src="../media/IMAGE/searchicon2.png"></button>
+
+        </form>
+      </span>
+       <a href="../JSP/logout.jsp"><img src="../media/IMAGE/logout.png" alt="Logout" id="logout"></a>
+</header>
+
+  <section class="hero">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="../media/VIDEO/welcome-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h1>Welcome Back!</h1>
+    <p><i>Discover upcoming campus activities, register for exciting events, and stay connected with your university community.</i></p>
+    <button class="btn" onclick="location.href='#category-h1'">Explore Events</button>
+  </div>
+</section>
+<!--Category Section -->
+<section class="categories">
+  <!--Category heading -->
+<p id="category-h1">Events Categories</p>
+ 
+<div class="cardContainer">
+  <div class="smallcont1">
+ <!--Category Academic  -->
+<div class="cards" id="academic">
+  <div class="image-box">
+      <a href="../HTML/academicEvents.html"  ><img src="../media/IMAGE/academic.jpeg" alt="Academic Events" ></a>
+  </div>
+  <p>Academic Events</p> 
+   <button class="catbtn" onclick="location.href='../HTML/academicEvents.html'">Explore</button>
+</div>
+ <!--Category Technical   -->
+<div  class="cards" id="technical ">
+  <div class="image-box">
+        <a href="../HTML/technicalEvents.html"  > <img src="../media/IMAGE/technical.jpeg" alt="Technical Events"></a>
+  </div>
+ <p>Technical Events</p>
+ <button class="catbtn" onclick="location.href='../HTML/technicalEvents.html'">Explore</button>
+</div>
+
+<!--Category Workshop  -->
+<div class="cards" id="sports">
+  <div class="image-box">
+       <a href="../HTML/workshopEvents.html"  > <img src="../media/IMAGE/workshop.jpg" alt="Workshop Events"></a>
+  </div>
+  <p>Workshops Events</p>
+   <button class="catbtn" onclick="location.href='../HTML/workshopEvents.html'" >Explore</button>
+</div>
+ 
+<!--Category Career  -->
+<div class="cards" id="sports">
+  <div class="image-box">
+       <a href="../HTML/careerEvents.html"  > <img src="../media/IMAGE/career.jpeg" alt="Career Events"></a>
+  </div>
+  <p>Career Events</p>
+   <button class="catbtn" onclick="location.href='../HTML/careerEvents.html'" >Explore</button>
+</div>
+
+  </div>
+  <div class="smallcont2">
+     
+<!--Category Sports  -->
+<div class="cards" id="sports">
+  <div class="image-box">
+       <a href="../HTML/sportsEvents.html"  > <img src="../media/IMAGE/sports.jpeg" alt="Sports Events"></a>
+  </div>
+  <p>Sports Events</p>
+   <button class="catbtn" onclick="location.href='../HTML/sportsEvents.html'" >Explore</button>
+</div>
+ <!--Category Cultural  -->
+<div  class="cards" id="cultural ">
+  <div class="image-box">
+        <a href="../HTML/culturalEvents.html"  ><img src="../media/IMAGE/cultural.jpeg" alt="Cultural Events"></a>
+  </div>
+ <p>Cultural Events</p>
+ <button class="catbtn">Explore</button>
+</div>
+ 
+ 
+<!--Category festivals  -->
+<div  class="cards" id="festivals ">
+  <div class="image-box">
+       <a href="../HTML/festivalEvents.html"  ><img src="../media/IMAGE/festival.jpeg" alt="Festival Events"></a>
+  </div>
+  
+ <p>Festival Events</p>
+ <button class="catbtn"   onclick="location.href='../HTML/festivalEvents.html'">Explore</button>
+</div>
+
+<!--Category Social  -->
+<div class="cards" id="social">
+   <div class="image-box">
+         <a href="../HTML/socialEvents.html"><img src="../media/IMAGE/social.jpeg" alt="Social Events"></a>
+   </div>
+  <p>Social & Community Events</p>
+  <button class="catbtn" onclick="location.href='../HTML/socialEvents.html'">Explore</button>
+</div>
+
+</div>
+</div>
+ </section>
+ 
+  <footer class="footer">
+    <p>© 2025 Campus Events Hub</p>
+  </footer>
+<!-- Load all category JS files -->
+<script src="../JAVASCRIPT/academic.js"></script>
+<script src="../JAVASCRIPT/technical.js"></script>
+<script src="../JAVASCRIPT/cultural.js"></script>
+<script src="../JAVASCRIPT/festival.js"></script>
+<script src="../JAVASCRIPT/sports.js"></script>
+<script src="../JAVASCRIPT/social.js"></script>
+
+<!-- Merge all events -->
+<script>
+const allEvents = [
+  ...academicEvents,
+  ...technicalEvents,
+  ...culturalEvents,
+  ...festivalEvents,
+  ...sportsEvents,
+  ...socialEvents
+];
+</script>
+
+<!-- Upcoming events filter logic -->
+<script src="../JAVASCRIPT/upcomingEvents.js"></script>
+
+</body>
+</html>

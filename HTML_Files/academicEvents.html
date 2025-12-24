@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <title>Campus Events Hub -Academic Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/events.css">
+
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">
+        <img src="../media/IMAGE/logo2.png" alt="Campus Events Hub">
+    </div>
+       
+    <nav id="navContent">
+
+        <a href="../HTML/HOME.html">Home</a>
+
+        <!-- Categories Dropdown -->
+        <div class="navOptions">
+            <a class="drop-btn">Categories</a>
+            <ul class="dropdown">
+                <li><a href="../HTML/academicEvents.html">Academic</a></li>
+                <li><a href="../HTML/technicalEvents.html">Technical</a></li>
+                 <li><a href="../HTML/workshopEvents.html">Workshop</a></li>
+                <li><a href="../HTML/careerEvents.html">Career</a></li>
+                <li><a href="../HTML/culturalEvents.html">Cultural</a></li>
+                <li><a href="../HTML/festivalEvents.html">Festivals</a></li>
+                <li><a href="../HTML/sportsEvents.html">Sports</a></li>
+                <li><a href="../HTML/socialEvents.html">Social & Community</a></li>
+            </ul>
+        </div>
+
+        <!-- Upcoming Events Dropdown -->
+        <div class="navOptions">
+            <a class="drop-btn">Upcoming Events</a>
+            <ul class="dropdown">
+                <li><a href="#">Today</a></li>
+                <li><a href="#">This Week</a></li>
+                <li><a href="#">This Month</a></li>
+            </ul>
+        </div>
+
+        <a href="../JSP/UserDashboard.jsp">My Enrollments</a>
+
+    </nav>
+     <span class="searchCont">
+        <form action="../JSP/search.jsp"  class="searchBar" autocomplete="off">
+          <input type="text" placeholder="Search Events" name="query">
+          <button type="submit" ><img src="../media/IMAGE/searchicon2.png"></button>
+
+        </form>
+      </span>
+       <a href="../JSP/logout.jsp"><img src="../media/IMAGE/logout.png" alt="Logout" id="logout"></a>
+</header>
+  <section class="events-section">
+  <h2>Academic Events</h2>
+  <div id="event-container"></div>
+</section>
+
+<script src="../JAVASCRIPT/academic.js"></script>
+<script>
+window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const highlightId = urlParams.get("highlight");
+
+    if (highlightId) {
+        const card = document.getElementById("event_" + highlightId);
+
+        if (card) {
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+            card.classList.add("highlight-card");
+
+            setTimeout(() => {
+                card.classList.remove("highlight-card");
+            }, 3000);
+        }
+    }
+};
+</script>
+
+
+  </body>
+  </html>
+
